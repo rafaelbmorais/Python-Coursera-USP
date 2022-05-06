@@ -1,10 +1,14 @@
+# a função devolve a menor string
+
 def menor_string(lista_de_nomes):
-    menor = lista_de_nomes[0]
+
+    nome = lista_de_nomes[0]
+
     for i in lista_de_nomes:
-        if i < menor:
-            menor = i
+        if i < nome:
+            nome = i
 
-    return menor
+    return nome
 
-lista_de_nomes = ['José', 'Renato', 'Rafael', 'Fernanda', 'Carol', 'Ed', 'Bruna', 'Ana', 'A']
+lista_de_nomes = ['José', 'Ronaldo', 'Rafaela', 'João Bosco', 'Carol', 'Ed', 'Jo', 'Bu', 'Carlos']
 print(menor_string(lista_de_nomes))

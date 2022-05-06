@@ -1,3 +1,5 @@
+# a função recebe 2 matrizes e devolve a soma das matrizes, caso tenham dimensões iguais.
+
 def soma_matrizes(m1, m2):
 
     l1 = len(m1)
