@@ -1,6 +1,6 @@
 # a função devolve a menor string
 
-def menor_string(lista_de_nomes):
+def primeiro_lex(lista_de_nomes):
 
     nome = lista_de_nomes[0]
 
@@ -10,5 +10,6 @@ def menor_string(lista_de_nomes):
 
     return nome
 
-lista_de_nomes = ['José', 'Ronaldo', 'Rafaela', 'João Bosco', 'Carol', 'Ed', 'Jo', 'Bu', 'Carlos']
-print(menor_string(lista_de_nomes))
+
+lista_de_nomes = ['AAAAAA', 'b']
+print(primeiro_lex(lista_de_nomes))
