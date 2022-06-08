@@ -16,20 +16,25 @@ for linha in range(m):
         linha_matriz.append(x)
     matriz.append(linha_matriz)
 
-cont_linhas = 0
+
 print('Matriz: ', m, 'x', n)
+cont_linhas = 0
 for l in range(len(matriz)):
     for c in range(len(matriz[0])):
-        print(matriz[l][c], end='  ')
+        print(matriz[l][c], end='  ') # imprime a matriz
     print()
-    if not (c != 0) in matriz[l]:
+    if not (c != 0) in matriz[l]:    #verifica se a linha contém somente zeros
         cont_linhas += 1
-        print('na linha', l, 'não tem zero')
 print('Linhas nulas = ', cont_linhas)
+
+
 
 cont_colunas = 0
 for c in range(len(matriz[0])):
+    aux = []
     for l in range(len(matriz)):
-        if (matriz[l][c]) == 0:
-            cont_colunas += 1
-print('Colunas nulas = ', cont_colunas)                
+        aux.append(matriz[l][c])
+    if not (l != 0) in aux:    #verifica se a coluna contém somente zeros
+        cont_colunas += 1
+print('Colunas nulas = ', cont_colunas)
+
